@@ -1,0 +1,51 @@
+.about {
+    @include laptop {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        height: 60vh; // alto de los botones de "prev y next"
+
+        &__img,
+        &__text {
+            top: 0;
+            width: 50%;
+           opacity: 0;
+            position: absolute;
+            transition: opacity 1s;
+        }
+
+        &__img {
+            left: 0;
+        }
+
+        &__text {
+            left: 50%;
+            font-size: 2rem;
+            padding: 0 2rem;
+
+            & h2 {
+                margin: 0;
+            }
+        } 
+    }
+}
+
+.show {
+    @include laptop {
+        opacity: 1;
+    }
+}
+
+.controls {
+    display: none;
+    @include laptop {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        color: $text-color;
+    }
+}

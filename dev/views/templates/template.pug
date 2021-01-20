@@ -1,0 +1,36 @@
+include ../config/config
+doctype
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="shortcut icon", href="assets/favicon/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/styles.css")
+        <script src="https://kit.fontawesome.com/dbce57f527.js" crossorigin="anonymous"></script>
+        title Photography Web
+    body
+        header#header.header
+            a(href="/").logo
+                img(src="./assets/img/logo.png", alt="web logo")
+            #topbar.topbar
+                .topbar__icon(data-type="login")
+                    i.fas.fa-user
+                    span Log in
+                .topbar__icon(data-type="register")
+                    i.fas.fa-user-plus
+                    span Register
+                .toggle-menu
+                    #toggle-menu.toggle-menu__icon
+                        .first-bar
+                        .second-bar
+                        .third-bar
+        #sidebar.sidebar
+            block menu
+        main.main
+            block title
+            block main
+        include ../includes/login-modal
+        include ../includes/register-modal
+        block scripts
+        script(src="js/scripts-min.js")

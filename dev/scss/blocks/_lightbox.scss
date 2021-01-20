@@ -1,0 +1,21 @@
+.lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: 1000;
+    background-color: rgba(#000, 0.7);
+
+    transform: scale(0);
+    transition: transform 0.3s;
+
+    &--show {
+        transform: scale(1);
+    }
+}

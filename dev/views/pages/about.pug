@@ -1,0 +1,31 @@
+extends ../templates/template
+block menu
+    - pageActive = "about"
+    include ../includes/main-menu 
+block title
+    h1.title About
+    .about
+        .about__img.show
+            img(src="assets/img/about.jpg" alt="about image 1")
+        .about__text.show
+            h2 Rio tranquilo
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis est odit, vel ipsa quibusdam
+              |libero magni aliquam deserunt optio inventore nulla excepturi incidunt ratione rerum voluptas
+              |cum beatae, facilis perferendis.
+        .about__img
+            img(src="assets/img/about2.jpg" alt="about image 2")
+        .about__text
+            h2 Focus
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis est odit, vel ipsa quibusdam
+              |libero magni aliquam deserunt optio inventore nulla excepturi incidunt ratione rerum voluptas
+              |cum beatae, facilis perferendis.
+        .about__img
+            img(src="assets/img/about3.jpeg" alt="about image 3")
+        .about__text
+            h2 Gato ojos azules
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis est odit, vel ipsa quibusdam
+              |libero magni aliquam deserunt optio inventore nulla excepturi incidunt ratione rerum voluptas
+              |cum beatae, facilis perferendis.
+    .controls
+        i.fas.fa-chevron-circle-left#prev
+        i.fas.fa-chevron-circle-right#next

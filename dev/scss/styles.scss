@@ -1,0 +1,36 @@
+/* **********   Guias de estilo   ********** */
+@import 'config/_colors.scss';
+@import 'config/_fonts.scss';
+/* ----------------------------------------- */
+
+/* **************   Mixin   **************** */
+@import 'mixins/breakpoints.scss';
+@import 'mixins/reset-list.scss';
+/* ----------------------------------------- */
+
+/* *************   Estilos base   ************* */
+@import 'base/normalize.scss';
+@import 'base/base.scss';
+/* -------------------------------------------- */
+
+/* ***********************   Bloques   ***************************** */
+@import 'blocks/_header.scss'; /* Cabecera de la web */
+    @import 'blocks/_topbar.scss'; /* Caja principal */
+    @import 'blocks/_toggle-menu.scss';  /* Caja menu hamburguesa */
+    @import 'blocks/_logo.scss'; /* Logo */
+
+
+@import 'blocks/_sidebar.scss';  /* Caja sidebar de la web */
+    @import 'blocks/_menu.scss'; /* Menu home, about, contact */
+
+@import 'blocks/_main.scss';
+    @import 'blocks/_lightbox.scss';
+    @import 'blocks/_forms.scss';
+    @import 'blocks/_titles.scss';
+    @import 'blocks/_social.scss';
+/* ------------------------------------------------------------------ */
+
+/* ***********************   Pages   ***************************** */
+@import 'pages/_about.scss';
+@import 'pages/_contact.scss';
+/* --------------------------------------------------------------- */
